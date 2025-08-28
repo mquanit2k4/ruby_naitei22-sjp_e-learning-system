@@ -1,6 +1,7 @@
 FactoryBot.define do
   factory :component do
-    component_type { :test }
+    component_type { :paragraph }
+    sequence(:index_in_lesson) { |n| n }
     association :lesson
     association :test
     index_in_lesson { 1 }
