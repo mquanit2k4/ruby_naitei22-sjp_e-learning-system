@@ -1,9 +1,9 @@
 require "simplecov"
 
 SimpleCov.start do
-  track_files "app/controllers/admin/*.rb"
+  track_files "app/controllers/user/*.rb"
   add_filter do |src|
-    !src.filename.match?(/app\/controllers\/admin\/.*\.rb$/)
+    !src.filename.match?(/app\/controllers\/user\/.*\.rb$/)
   end
   minimum_coverage 90
   minimum_coverage_by_file 90

@@ -15,9 +15,10 @@ FactoryBot.define do
       association :word
     end
 
+<<<<<<< Updated upstream
     trait :paragraph_type do
       component_type { :paragraph }
       content { "Sample paragraph content" }
-    end
-  end
-end
+    trait :paragraph do
+      component_type { :paragraph }
+      content { "Sample paragraph content for testing" }
